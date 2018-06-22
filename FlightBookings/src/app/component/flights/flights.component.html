@@ -1,0 +1,206 @@
+<div class="nav">
+
+    <h1>FLIGHT PACKAGES </h1>
+
+
+
+    <ul>
+
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/flights">Make a booking</a></li>
+        <li><a routerLink="/view">View bookings</a></li>
+
+
+
+
+    </ul>
+
+</div>
+
+<body>
+
+
+
+
+    <table style="width:100%">
+
+        <tr>
+            <th>Carrier</th>
+            <th>Price</th>
+            <th>Choose airline
+
+
+        </tr>
+        <tr>
+            <td>SAA
+                <div class="logo"></div>
+            </td>
+            <td>2009.92</td>
+            <td> <input type="radio" value="2009.92" [(ngModel)]="price" checked> <br>
+
+            </td>
+        </tr>
+        <tr>
+            <td>Air Link
+                <div class="logo1"></div>
+            </td>
+            <td>1250.00</td>
+            <td> <input type="radio" value="1250.00" [(ngModel)]="price" checked> <br>
+
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <td>Kulula
+                <div class="logo2"></div>
+            </td>
+            <td>1120.00</td>
+            <td> <input type="radio" value="1120.00" [(ngModel)]="price" checked> <br>
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+            <td>British Airways
+                <div class="logo3"></div>
+            </td>
+            <td>1880.32</td>
+            <td> <input type="radio" value="1880.32" [(ngModel)]="price" checked> <br>
+
+            </td>
+
+
+        </tr>
+        <tr>
+            <td>Mango
+                <div class="logo4"></div>
+            </td>
+            <td>1010.23</td>
+            <td> <input type="radio" value="1010.23" [(ngModel)]="price" checked> <br>
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+            <td>Fly Safair
+                <div class="logo5"></div>
+            </td>
+            <td>890.88</td>
+            <td> <input type="radio" value="890.88" [(ngModel)]="price" checked> <br>
+
+            </td>
+
+
+        </tr>
+
+    </table>
+    <br>
+    <br>
+    <br>
+    <form>
+
+        <table>
+            <tr>
+                <td colspan="2">Please fill in the required fields</td>
+            </tr>
+            <tr>
+                <td>
+                    Title:
+                </td>
+                <td>
+                    <select>
+                      <option value="Ms">Ms</option>
+                      <option value="Mrs">Mrs</option>
+                      <option value="Mr">Mr</option>
+                      <option value="Dr">Dr</option>
+                      <option value="Prof">Prof</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Full Name:
+                </td>
+                <td>
+                    <input type="text" name="full_name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Cellphone:
+                </td>
+                <td>
+                    <input type="text" name="cellphone">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    email address:
+                </td>
+                <td>
+                    <input type="text" name="email">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Payment Method:
+                </td>
+                <td>
+                    <select>
+            <option value="Visa">Visa</option>
+            <option value="Master card">Master card</option>
+            <option value="Paypal">Paypal</option>
+            <option value="Dinners Club">Dinners Club</option>
+            <option value="SID">SID</option>
+          </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Card number:
+                </td>
+                <td>
+                    <input type="text" name="cardNr">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Secure pin:
+                </td>
+                <td>
+                    <input type="Pin" name="Pin">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+
+
+
+                    <button type="button" (click)="ConfirmBooking()">Confirm Booking</button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+    <h4>
+        <footer>Discovery vitality members get 15% off eve ryday
+        </footer>
+
+
+
+    </h4>
+
+
+
+</body>
+
+<router-outlet></router-outlet>

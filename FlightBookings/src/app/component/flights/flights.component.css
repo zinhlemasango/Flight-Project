@@ -1,0 +1,125 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 25px;
+    width:25%;
+    height: 50px;
+   margin-top: 20px;
+}
+
+
+footer{
+
+
+
+    background:rgb(255, 192, 203);
+    color:rgb(26, 24, 24);
+    bottom:0px;
+    width:100%;
+    position:fixed;
+    vertical-align:middle;
+    text-align:centre;
+    line-height:normal;
+    padding:0;
+    
+    }
+
+    
+
+h2,h4,h3,h5{
+
+    text-align:center;
+    justify-content: center;
+    
+    }
+
+  .nav ul li {
+    padding: 0.5%;
+  }
+ .nav ul li{
+    color: gray;
+    border-radius: 10px;
+    
+  }
+  .nav ul li a:hover{
+      background-color: black;
+      color: white;
+  }
+  .logo{
+      width: 250px;
+      background: url(../../../assets/SAA.gif) center no-repeat;
+      background-size: contain;
+      margin: auto;
+      height: 50px;
+      border-radius: 10px;
+     
+  }
+  .logo1{
+    width: 250px;
+    background: url(../../../assets/Airlink.jpg) center no-repeat;
+    background-size: contain;
+    margin: auto;
+    height: 50px;
+    border-radius: 10px;
+   
+}
+
+.logo2{
+    width: 250px;
+    background: url(../../../assets/Kulula.jpg) center no-repeat;
+    background-size: contain;
+    margin: auto;
+    height: 50px;
+    border-radius: 10px;
+   
+}
+
+.logo3{
+    width: 250px;
+    background: url(../../../assets/British.jpg) center no-repeat;
+    background-size: contain;
+    margin: auto;
+    height: 50px;
+    border-radius: 10px;
+   
+}
+
+.logo4{
+    width: 250px;
+    background: url(../../../assets/Mango.jpg) center no-repeat;
+    background-size: contain;
+    margin: auto;
+    height: 50px;
+    border-radius: 10px;
+   
+}
+
+.logo5{
+    width: 250px;
+    background: url(../../../assets/flysa.jpg) center no-repeat;
+    background-size: contain;
+    margin: auto;
+    height: 50px;
+    border-radius: 10px;
+   
+}
+.appForm{
+
+    border: 0ch;
+    justify-content: center;
+
+
+}
+
+
+.appForm{
+
+    text-align:center;
+    justify-content: center;
+    
+
+}
+
+#tbl, td, tr{
+    border: 2px solid grey;
+}

@@ -1,0 +1,180 @@
+
+<div class="nav">
+
+  <h1> TINKER FLIGHT RESERVATION</h1>
+ 
+
+  
+    
+<ul>
+
+        <li><a routerLink = "/home">Home</a></li>
+        <li><a routerLink = "/flights">Make a booking</a></li>
+        <li><a routerLink = "/view">View bookings</a></li>
+      
+      
+      
+      </ul>
+
+</div>
+
+  
+  <body>
+        <div class="main-logo"></div>
+      <table style="width:100%">
+ 
+        
+          <tr>
+
+            <th>Traveling From:</th>
+            <th>Traveling To:</th> 
+            
+          </tr>
+          <tr>
+            
+<tr>
+    <td>
+
+        <fieldset id="City">
+        <input type="radio" name="City" value="OR Tambo international" [(ngModel)] = "City" checked>Johannesburg <br>
+        <input type="radio" name="City" value="George airport"  [(ngModel)] = "City">George airport <br>
+        <input type="radio" name="City" value="East London"  [(ngModel)] = "City">East London <br>
+        <input type="radio" name="City" value="Port Elizabeth international"  [(ngModel)] = "City">Port Elizabeth international <br>
+        <input type="radio" name="City" value="Kimberly"  [(ngModel)] = "City">Kimberly <br>
+        <input type="radio" name="City" value="Upington"  [(ngModel)] = "City">Upington <br>
+        <input type="radio" name="City" value="Pretoria(Wonderboom)"  [(ngModel)] = "City">Pretoria(Wonderboom) <br>
+        <input type="radio" name="City" value="Lanseria"   [(ngModel)] = "City"> Lanseria<br>
+        <input type="radio" name="City" value="King Shaka international"  [(ngModel)] = "City"> King Shaka international<br>
+        <input type="radio" name="City" value="Cape Town international"  [(ngModel)] = "City">Cape Town international <br>
+
+       </fieldset>
+
+    </td>
+    
+
+
+    <fieldset id="group2">
+    
+    <input type="radio" name="group2" value="Pretoria(Wonderboom)" [(ngModel)] ="group2"  checked>Pretoria(Wonderboom) <br>
+    <input type="radio" name="group2" value="OR Tambo international"  [(ngModel)] ="group2" >Johannesburg <br>
+    <input type="radio" name="group2" value="Lanseria" [(ngModel)] ="group2" >Lanseria<br>
+    <input type="radio" name="group2" value="King Shaka international" [(ngModel)] ="group2"  > King Shaka international<br>
+    <input type="radio" name="group2" value="Cape Town international" [(ngModel)] ="group2" >Cape Town international <br>
+    <input type="radio" name="group2" value="George airport"[(ngModel)] ="group2"  >George airport <br>
+    <input type="radio" name="group2" value="East London"[(ngModel)] ="group2"  >East London <br>
+    <input type="radio" name="group2" value="Port Elizabeth international" [(ngModel)] ="group2"  >Port Elizabeth international <br>
+    <input type="radio" name="group2" value="Kimberly"  [(ngModel)] ="group2">Kimberly <br>
+    <input type="radio" name="group2" value="Upington"  [(ngModel)] ="group2">Upington <br>
+
+</fieldset>
+  
+    
+</tr>
+
+
+          
+        </table>
+
+<table>
+        <h3>
+<label> Type of trip:</label>
+
+        </h3>
+        <h5>
+            <input type="radio" name="Trip" value="One" [(ngModel)] = "TripType">Return 
+            <input type="radio" name="Trip" value="Return" [(ngModel)] = "TripType" >One Way 
+        
+        </h5>
+
+        <h4>
+
+            <label>Number of tickets: </label>
+
+            <select name = "numTickets"  [(ngModel)] = "numTickets" [ngModelOptions] = "{standalone:true}">
+                <option value="1">1</option>
+                <option value="2" >2</option>
+                <option value="3" >3</option>
+                <option value="4" >4</option>
+                <option value="5" >5</option>
+              </select>
+    
+          </h4>
+
+        <h4>
+
+            <label>Departure Date: </label>
+            <select name = "date" [(ngModel)] = "date" [ngModelOptions] = "{standalone:true}"                         > 
+          
+                <option value="20/06/18">20/06/18</option>
+                <option value="21/06/18">21/06/18</option>
+                <option value="22/06/18">22/06/18</option>
+                <option value="23/06/18">24/06/18</option>
+                <option value="24/06/18">24/06/18</option>
+                <option value="25/06/18">25/06/18</option>
+                <option value="26/06/18">26/06/18</option>
+                <option value="27/06/18">27/06/18</option>
+                <option value="28/06/18">28/06/18</option>
+                <option value="29/06/18">29/06/18</option>
+                <option value="30/06/18">27/06/18</option>
+                <option value="01/07/18">01/07/18</option>
+                <option value="02/07/18">02/07/18</option>
+                <option value="03/07/18">03/07/18</option>
+                <option value="04/07/18">04/07/18</option>
+                <option value="05/07/18">05/07/18</option>
+                <option value="06/07/18">06/07/18</option>
+                <option value="07/07/18">07/07/18</option>
+                <option value="08/07/18">08/07/18</option>
+                <option value="09/07/18">09/07/18</option>
+              </select>
+    
+          </h4>
+    
+          <h4>
+
+              <label>Departure Time: </label>
+
+              <select name = "time" [(ngModel)] = "time" [ngModelOptions] = "{standalone:true}"                         > 
+          
+                  <option value="06:00">06:00</option>
+                  <option value="13:00">13:00</option>
+                  <option value="16:00">16:00</option>
+                  <option value="19:00">19:00</option>
+                  <option value="21:00">21:00</option>
+                </select>
+      
+            </h4>
+      
+      
+           <h4>Are you a Discovery Member?</h4>
+  <h5>
+      <input type="radio" name="Discovery members" value="Yes"  [(ngModel)] = "member">Yes 
+      <input type="radio" name="Discovery members" value="No"[(ngModel)] = "member">No
+
+  </h5>
+
+  <h4>
+      <button type="button" (click) = "Search()">Search</button>
+
+  </h4>
+  
+  
+      <footer>Discovery vitality members get 15% off everyday</footer>
+
+
+    </table>
+  </body>
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
